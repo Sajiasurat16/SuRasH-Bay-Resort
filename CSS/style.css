@@ -187,6 +187,158 @@ footer p {
     font-weight: bold;
 }
 
+/* Resort services */
+.services-list {
+    max-width: 850px;
+    margin: 30px auto;
+    padding-left: 35px;
+    text-align: left;
+}
+
+.services-list > li {
+    background-color: #f0f8fa;
+    margin-bottom: 25px;
+    padding: 20px 25px;
+    border-left: 5px solid #075985;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    transition: background-color 0.3s;
+}
+
+.services-list > li:hover {
+    background-color: #e0f2f5;
+}
+
+.services-list > li::marker {
+    color: #075985;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.services-list h3 {
+    color: #075985;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.services-list ul {
+    list-style-type: circle;
+    padding-left: 25px;
+}
+
+.services-list ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555555;
+}
+
+.services-list ul li::marker {
+    color: #0ea5a8;
+}
+
+/* Contact form */
+.contact-form {
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.contact-form fieldset {
+    background-color: #f0f8fa;
+    border: 1px solid #c9e0e7;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+    min-width: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form legend {
+    color: #075985;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0 12px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #075985;
+    margin-bottom: 6px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #b8cdd5;
+    border-radius: 6px;
+    background-color: white;
+    font-family: inherit;
+    font-size: 16px;
+    color: #333333;
+}
+
+/* Input focus effect */
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #0ea5a8;
+    border-color: #0ea5a8;
+    box-shadow: 0 0 6px rgba(14, 165, 168, 0.2);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+/* Form buttons */
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form-buttons button {
+    background-color: #075985;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-buttons button:hover {
+    background-color: #0a7c86;
+}
+
+.form-buttons button[type="reset"] {
+    background-color: #e0f2f5;
+    color: #075985;
+}
+
+.form-buttons button[type="reset"]:hover {
+    background-color: #c9e5eb;
+}
+
+/* Form confirmation message */
+#form-status {
+    color: #16794a;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
 /* Responsive design */
 @media screen and (max-width: 768px) {
 
@@ -236,4 +388,42 @@ footer p {
     .room-card {
         width: 100%;
     }
+
+    .services-list {
+        padding-left: 25px;
+    }
+
+    .services-list > li {
+        padding: 15px;
+    }
+
+    .services-list h3 {
+        font-size: 21px;
+    }
+
+    .services-list ul li {
+        font-size: 16px;
+    }
+
+    .contact-form fieldset {
+        padding: 15px;
+    }
+
+    .contact-form legend {
+        font-size: 21px;
+    }
+
+    .contact-form label {
+        font-size: 16px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .form-buttons button {
+        width: 100%;
+    }
+
 }

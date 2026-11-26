@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuRasH Bay Resort | Contact</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>SuRasH Bay Resort</h1>
+        <p>Let Us Help You Plan Your Perfect Summer Getaway</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms.html">Rooms &amp; Rates</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Contact Us</h2>
+
+            <p>
+                Have questions about your upcoming stay at SuRasH Bay Resort?
+                Complete the form below to inquire about our rooms,
+                reservations, services, and activities.
+            </p>
+
+            <p>Fields marked with an asterisk (*) are required.</p>
+
+            <p>This website is for educational purposes only.
+               Please do not enter real personal information.
+            </p>
+
+            <form id="contact-form" class="contact-form">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="firstName">First Name *</label>
+                    <input type="text" id="firstName"
+                           name="firstName" required>
+
+                    <label for="lastName">Last Name *</label>
+                    <input type="text" id="lastName"
+                           name="lastName" required>
+
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email"
+                           name="email" required>
+
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone"
+                           name="phone"
+                           pattern="[0-9]{10}"
+                           placeholder="1234567890"
+                           title="Enter a 10-digit phone number without spaces or dashes"
+                           required>
+
+                    <label for="city">City *</label>
+                    <input type="text" id="city"
+                           name="city" required>
+
+                    <label for="state">State *</label>
+                    <input type="text" id="state"
+                           name="state" required>
+
+                    <label for="zip">ZIP Code *</label>
+                    <input type="text" id="zip"
+                           name="zip"
+                           pattern="[0-9]{5}"
+                           maxlength="5"
+                           placeholder="02115"
+                           title="Enter a valid 5-digit ZIP code"
+                           required>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Vacation Information</legend>
+
+                    <label for="arrival">Preferred Arrival Date</label>
+                    <input type="date" id="arrival"
+                           name="arrival">
+
+                    <label for="guests">Number of Guests *</label>
+                    <input type="number" id="guests"
+                           name="guests" min="1" max="10" required>
+
+                    <label for="room">Preferred Room Type *</label>
+                    <select id="room" name="room" required>
+                        <option value="">Select a room</option>
+                        <option value="standard">Standard Room</option>
+                        <option value="ocean">Ocean View Room</option>
+                        <option value="family">Family Suite</option>
+                        <option value="undecided">Not Sure Yet</option>
+                    </select>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+
+                    <label for="subject">Reason for Contact *</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Select a reason</option>
+                        <option value="reservation">Reservation Inquiry</option>
+                        <option value="rooms">Rooms and Rates</option>
+                        <option value="services">Resort Services</option>
+                        <option value="activities">Activities</option>
+                        <option value="other">Other Questions</option>
+                    </select>
+
+                    <label for="message">Your Message *</label>
+                    <textarea id="message" name="message"
+                              rows="6" required></textarea>
+
+                </fieldset>
+
+                <div class="form-buttons">
+                    <button type="submit">Submit Inquiry</button>
+                    <button type="reset">Clear Form</button>
+                </div>
+
+                <p id="form-status" role="status"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SuRasH Bay Resort</p>
+        <p>Photos courtesy of Unsplash.</p>
+    </footer>
+
+    <script src="JS/validation.js"></script>
+
+</body>
+
+</html>
