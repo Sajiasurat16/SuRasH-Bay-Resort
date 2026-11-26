@@ -224,7 +224,8 @@ footer p {
 
 .services-list ul {
     list-style-type: circle;
-    padding-left: 25px;
+    list-style-image: url("../images/shell.svg");
+    padding-left: 30px;
 }
 
 .services-list ul li {
